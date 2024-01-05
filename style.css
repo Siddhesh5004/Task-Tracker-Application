@@ -4,46 +4,52 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-body{
     font-family: 'Poppins', sans-serif;
-    background-image: url('./assets/BG.jpg');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position:center; 
-    background-repeat: no-repeat; 
+    box-sizing: border-box;
+}
+
+#header {
+    width: 100%;
     height: 100vh;
-    margin: 0; /* Ensure there is no margin */
-    overflow: hidden;
+    background-image: url(./assets/newbg1.png);
+    background-size: cover;
+    background-position: center;
 }
 
-#nav
-{
-    padding-top: 50px ;
+nav{
     display: flex;
-    justify-content: space-evenly;
-    height:17vh;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-#title
-{
-    cursor: pointer;
-    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
-    font-size: 2.5rem;
-    color: rgb(254, 255, 255);
+.logo{
+    width: 180px;
 }
-
-a{
-    
--webkit-text-stroke: 1px rgb(0, 0, 0);
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-#nav-links{
-    
-    display: flex;
-    gap:2rem;
+nav ul li {
+    display: inline-block;
     list-style: none;
-    font-size: 1.9rem;
-    font-weight: 600;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #0c0c0c;
+    text-decoration:none;
+    font-size: 18px;
+    position: relative;
+    font-weight: bolder;
+    
+}
+
+.header-text{
+    margin-top: 10%;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;  
+}
+.header-text span{
+    color: rgb(75, 105, 227);
+    
 }
